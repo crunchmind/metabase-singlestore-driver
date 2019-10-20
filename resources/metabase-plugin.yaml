@@ -1,0 +1,22 @@
+info:
+  name: Metabase MemSQL Driver
+  version: 0.1.0
+  description: Allows Metabase to connect to MemSQL databases.
+driver:
+  name: memsql
+  display-name: MemSQL
+  lazy-load: true
+  parent: mysql
+  connection-properties:
+    - host
+    - dbname
+    - merge:
+        - port
+        - default: 3306
+    - user
+    - password
+    - ssl
+    
+init:
+  - step: load-namespace
+    namespace: metabase.driver.memsql
