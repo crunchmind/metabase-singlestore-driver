@@ -1,4 +1,4 @@
-(defproject metabase/memsql-driver "0.1.0"
+(defproject metabase/singlestore-driver "0.1.0"
   :min-lein-version "2.5.0"
 
   :profiles
@@ -10,4 +10,4 @@
     :aot           :all
     :javac-options ["-target" "1.8", "-source" "1.8"]
     :target-path   "target/%s"
-    :uberjar-name  "memsql.metabase-driver.jar"}})
+    :uberjar-name  "singlestore.metabase-driver.jar"}})

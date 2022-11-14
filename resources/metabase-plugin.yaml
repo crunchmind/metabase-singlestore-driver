@@ -1,10 +1,10 @@
 info:
-  name: Metabase MemSQL Driver
+  name: Metabase SingleStore Driver
   version: 0.1.0
-  description: Allows Metabase to connect to MemSQL databases.
+  description: Allows Metabase to connect to SingleStore and MemSQL Compliant databases.
 driver:
-  name: memsql
-  display-name: MemSQL
+  name: singlestore
+  display-name: SingleStore
   lazy-load: true
   parent: mysql
   connection-properties:
@@ -19,4 +19,4 @@ driver:
     
 init:
   - step: load-namespace
-    namespace: metabase.driver.memsql
+    namespace: metabase.driver.singlestore
