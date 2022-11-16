@@ -20,3 +20,5 @@ driver:
 init:
   - step: load-namespace
     namespace: metabase.driver.singlestore
+  - step: load-namespace
+    namespace: metabase.driver.mysql
