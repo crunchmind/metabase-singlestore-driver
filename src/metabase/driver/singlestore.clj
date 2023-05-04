@@ -6,7 +6,6 @@
             [metabase.driver.sql-jdbc.connection :as sql-jdbc.conn]
             [metabase.util
              [honeysql-extensions :as hx]]
-
             [metabase.driver.sql.query-processor :as sql.qp]))
 
 (defmethod sql.qp/date [:singlestore :year] [_ _ expr] (hsql/call :date_trunc (hx/literal :year) (hsql/call :timestamp expr)))

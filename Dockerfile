@@ -14,7 +14,7 @@ RUN mkdir metabase && \
     cd metabase && \
     git init && \
     git remote add origin https://github.com/metabase/metabase && \
-    git fetch --progress --depth=1 origin 64178eb5856c772bb3f9b4a3fad7bd98dde8810e && \
+    git fetch --progress --depth=1 origin 8967c94523685d954589a492d17710873c7b3558 && \
     git reset --hard FETCH_HEAD && \
     mkdir plugins
 RUN mkdir singlestore-metabase-driver
