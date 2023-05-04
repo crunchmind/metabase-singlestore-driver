@@ -1,5 +1,5 @@
 (ns metabase.driver.singlestore
-  (:require [honeysql
+  (:require [honey
              [sql :as hsql]]
             [metabase.driver.sql-jdbc.sync :as sql-jdbc.sync]
             [metabase.driver.sql-jdbc.sync.describe-table :as sql-jdbc.describe-table]
