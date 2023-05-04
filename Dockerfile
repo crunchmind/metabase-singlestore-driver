@@ -21,7 +21,7 @@ RUN mkdir singlestore-metabase-driver
 COPY . ./singlestore-metabase-driver/
 RUN cd ./singlestore-metabase-driver/ && clojure -Xbuild :project-dir \"`pwd`\"
 
-FROM metabase/metabase-enterprise:v1.45.3
+FROM metabase/metabase-enterprise:v1.46.2
 RUN adduser -D metabase metabase
 RUN mkdir -p /app/plugins && chown metabase:metabase /app/plugins
 ENV MB_PLUGINS_DIR /app/plugins
